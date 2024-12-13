@@ -373,5 +373,6 @@ async def leave(ctx: bridge.Context):
     await bot.voice_clients[0].disconnect(force=True)
 
 import os
-
+from keep_alive import keep_alive
+keep_alive()
 bot.run(token=os.getenv("TOKEN"))
