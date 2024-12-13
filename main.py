@@ -59,11 +59,12 @@ races = [
     ["Half-elf", discord.ButtonStyle.blurple, "🌟"],
     ["Half-orc", discord.ButtonStyle.red, "🛡️"],
     ["Tiefling", discord.ButtonStyle.red, "🔥"],
+    ["Lizardfolk", discord.ButtonStyle.green, "🦎"],
     ["Ryan Gosling", discord.ButtonStyle.red, "✨"]
 ]
 
 races_roles = [1317201181268906115, 1317201182351163506, 1317201183193956474, 1317201184720949311, 1317201185681178706,
-               1317201186788475082, 1317201188059353220, 1317201188906733640, 1317201190735315017, 1317201192203583498]
+               1317201186788475082, 1317201188059353220, 1317201188906733640, 1317201190735315017, 1317272552816644096 ,1317201192203583498]
 
 
 class RaceSelection(discord.ui.View):
