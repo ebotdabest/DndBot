@@ -6,9 +6,6 @@ import discord
 from discord.ext import commands, bridge
 from io import BytesIO
 
-with open("config.json", "r") as config:
-    config = json.load(config)
-
 bot = commands.Bot(command_prefix='!', help_command=None, intents=discord.Intents.all())
 
 MAPPING = {
@@ -375,5 +372,6 @@ async def join(ctx: commands.Context):
 async def leave(ctx: bridge.Context):
     await bot.voice_clients[0].disconnect(force=True)
 
+import os
 
-bot.run(token=config["token"])
+bot.run(token=os.getenv("TOKEN"))
